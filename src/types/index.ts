@@ -1,6 +1,6 @@
 export type NodeType = 'account' | 'loan' | 'collateral';
 
-export interface TreeNode {
+export interface TreeNode extends Record<string, unknown> {
   id: string;
   type: NodeType;
   label: string;
